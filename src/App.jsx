@@ -17,8 +17,11 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-
-          <About />
+{/** 
+ * 
+ *     <About />
+*/}
+      
 
         <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
           <Tech />
