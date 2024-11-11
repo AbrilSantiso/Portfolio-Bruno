@@ -1,19 +1,11 @@
 import {
-  frontend,
-  backend,
-  ux,
-  prototyping,
   sharenting,
   unicef,
   brahma,
   devoto,
   belgrano,
-  about,
-  space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
+  airport,
+  lluvia,
   premiere,
   photoshop,
   illustrator,
@@ -21,7 +13,6 @@ filmEdition,
 filmacion,
 productPic,
 script,
-publicidad
 
 } from '../assets';
 
@@ -35,29 +26,15 @@ export const navLinks = [
     title: 'Proyectos',
   },
   {
+    id: 'reviews',
+    title: 'Reseñas',
+  },
+  {
     id: 'contact',
     title: 'Contacto',
   },
 ];
 
-const services = [
-  {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'UI/UX Design',
-    icon: ux,
-  },
-  {
-    title: 'Software Prototyping',
-    icon: prototyping,
-  },
-];
 
 const technologies = [
 
@@ -90,42 +67,12 @@ const technologies = [
  
 ];
 
-const experiences = [
-  {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
-  },
-  {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
-  },
-  {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
-    iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
-  },
-];
 
 const projects = [
   {
     id: 'project-1',
     name: 'Sharenting',
-    description: 'Videocaso para campaña de sharenting para UNICEF. Materia: Dirección de arte. Licenciatura en Publicidad',
+    description: 'Videocaso para campaña de sharenting para UNICEF. Materia: Dirección de arte. Licenciatura en Publicidad.',
     tags: [
       {
         name: 'react',
@@ -147,7 +94,7 @@ const projects = [
     id: 'project-2',
     name: 'Spot - Sharenting',
     description:
-      'Spot sobre para campaña sobre sharenting para UNICEF. Materia Direccion de Arte, licenciatura en Publicidad',
+      'Spot sobre para campaña sobre sharenting para UNICEF. Materia Direccion de Arte, licenciatura en Publicidad.',
     tags: [
       {
         name: 'react',
@@ -168,7 +115,7 @@ const projects = [
   {
     id: 'project-3',
     name: 'Brahma',
-    description: 'Spot para Brahma - Cantidad justa de malta. Materia: Direccion de Arte - Lic. en Publicidad',
+    description: 'Spot para Brahma - Cantidad justa de malta. Materia: Direccion de Arte - Lic. en Publicidad.',
     tags: [
       {
         name: 'nextjs',
@@ -211,7 +158,7 @@ const projects = [
     id: 'project-5',
     name: 'Barrancas de Belgrano',
     description:
-      'Filmado en Belgrano - 07/10/2023 ',
+      'Filmado en Belgrano - 07/10/2023',
     tags: [
       {
         name: 'nextjs',
@@ -229,7 +176,51 @@ const projects = [
     image: belgrano,
     video: "https://www.youtube.com/embed/9LsOFG3SIcA?si=E3krreebMYHPDEZs"
   },
+  {
+    id: 'project-6',
+    name: 'Aeropuerto',
+    description:
+      'Vuelta a casa. Filmado en el Aeropuerto de Bariloche.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: airport,
+    video: "https://www.youtube.com/embed/X-auKi-IhqY?si=HMA7C8RrSfF1DAf5"
+  },
+  {
+    id: 'project-7',
+    name: 'Lluvia en la capital',
+    description:
+      'Filmado en el barrio de Recoleta - 03/11/2023 ',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: lluvia,
+    video: "https://www.youtube.com/embed/VxSWKPU7eMY?si=7PGD3vWhjJBmlj64"
+  },
 
 ];
 
-export { services, technologies, experiences, projects };
+export { technologies, projects };

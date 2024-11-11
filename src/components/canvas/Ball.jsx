@@ -40,7 +40,7 @@ const BallCanvas = ({ icon, name }) => {
     <div className="flex flex-col justify-center items-center">
       <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
         <Suspense fallback={<Loader />}>
-          <OrbitControls enableZoom={false} position0={0} />
+          <OrbitControls enableZoom={false} position0={0}  enableRotate={false}/>
           <Ball imgUrl={icon} />
         </Suspense>
 

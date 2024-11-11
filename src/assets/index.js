@@ -12,7 +12,6 @@ import backend from './icons/backend.png';
 import ux from './icons/ux.png';
 import frontend from './icons/frontend.png';
 import prototyping from './icons/prototyping.png';
-import github from './icons/github.png';
 import close from './icons/close.png';
 import download from './icons/download.png';
 import downloadHover from './icons/downloadHover.png';
@@ -45,6 +44,10 @@ import belgrano from './projects/belgrano.png';
 import space from './projects/space-hub.png';
 import about from "./personal/about.png"
 import about2 from "./personal/about-2.jpg"
+import lluvia from './projects/lluvia.jpg';
+import airport from './projects/airport.webp';
+
+
 
 export {
   bwmap,
@@ -72,6 +75,8 @@ export {
   brahma,
   devoto,
   belgrano,
+  lluvia,
+  airport,
   about,
   about2,
   space,

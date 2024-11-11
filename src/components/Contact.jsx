@@ -6,6 +6,8 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { send, sendHover } from "../assets";
 import { about2 } from "../assets";
+import { FaLinkedin, FaInstagram, FaBehance  } from "react-icons/fa";
+import { FaSquareLetterboxd  } from "react-icons/fa6";
 
 const Contact = () => {
   const formRef = useRef();
@@ -26,20 +28,19 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
+
     emailjs
       .send(
-        "service_39y62ge", // paste your ServiceID here (you'll get one when your service is created).
-        "template_gvk7j3q", // paste your TemplateID here (you'll find it under email templates).
+        "service_39y62ge",
+        "template_gvk7j3q",
         {
           from_name: form.name,
-          to_name: "Bruno", // put your name here.
+          to_name: "Bruno", 
           from_email: form.email,
-          to_email: "carzeddabruno@gmail.com", //put your email here.
+          to_email: "carzeddabruno@gmail.com", 
           message: form.message,
         },
-        "t7wpvmI8vPH9OLlr9" //paste your Public Key here. You'll get it in your profile section.
+        "t7wpvmI8vPH9OLlr9" 
       )
       .then(
         () => {
@@ -149,17 +150,32 @@ const Contact = () => {
             />
           </button>
         </form>
+          <div className="flex justify-center mt-10 gap-10">
+          <a href="https://www.linkedin.com/in/bruno-carzedda/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-5xl text-timberWolf hover:text-gray-400 transition duration-300" />
+          </a>
+          <a href="https://www.instagram.com/brunocarzedda/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-5xl text-timberWolf hover:text-gray-400 transition duration-300" />
+          </a>
+          <a href="https://www.behance.net/brunocarzedda" target="_blank" rel="noopener noreferrer">
+            <FaBehance className="text-5xl text-timberWolf hover:text-gray-400 transition duration-300" />
+          </a>
+          <a href="https://letterboxd.com/brunoc01/films/reviews/" target="_blank" rel="noopener noreferrer">
+            <FaSquareLetterboxd  className="text-5xl text-timberWolf hover:text-gray-400 transition duration-300" />
+          </a>
+        </div>
       </motion.div>
-      <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+      <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
         <img
           src={about2}
           alt={"Conjunto de fotos"}
           style={{ marginLeft: '20px' }}
           
         />
-            <h6           style={{ marginLeft: '22px', marginTop:"20px" }}
+            <h6           style={{ marginLeft: '25px', marginTop:"20px" }}
         >Video: Belgrano</h6>
       </motion.div>
+
     </div>
   );
 };

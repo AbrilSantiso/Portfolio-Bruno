@@ -1,13 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Contact,
-  Experience,
-  Hero,
-  Navbar,
-  Tech,
-  Projects,
-} from "./components";
+import { About, Contact, Hero, Navbar, Tech, Projects } from "./components";
+import Reviews from "./components/Reviews";
 
 const App = () => {
   return (
@@ -17,18 +10,16 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-{/** 
- * 
- *     <About />
-*/}
-      
-
+        <About />
         <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
           <Tech />
         </div>
-
         <Projects />
-          <Contact />
+        <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+          <Reviews />
+        </div>
+
+        <Contact />
       </div>
     </BrowserRouter>
   );
