@@ -28,7 +28,7 @@ const Hero = () => {
               Bruno{" "}
               <span
                 className="text-eerieBlack font-mova font-extrabold uppercase 
-      sm:text-[110px] text-[70px] md:text-[90px] lg:text-[110px]"
+      sm:text-[110px] text-[60px] md:text-[90px] lg:text-[110px]"
               >
                 Carzedda
               </span>
